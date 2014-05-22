@@ -93,7 +93,18 @@ where I don't want to load L<DateTime> just for this.
 
 =head1 SEE ALSO
 
-L<DateTime> has several features related to quarters.
+L<DateTime> has several features related to quarters:
+given a C<DateTime> instance, the C<quarter> method returns a
+number between 1 and 4.
+The C<day_of_quarter> method returns a number between 1 and the number
+of days in the quarter.
+The C<quarter_name> method returns a locale-specific name for the quarter.
+
+L<Date::Format> provides a C<time2str> function that will generate
+the quarter number (1..4).
+
+L<Time::Moment> also provides a C<quarter> method that returns the
+quarter number for a given date.
 
 =head1 REPOSITORY
 
