@@ -108,7 +108,7 @@ quarter number for a given date.
 
 =head1 REPOSITORY
 
-L<https://github.com/neilbowers/Date-QuarterOfYear>
+L<https://github.com/neilb/Date-QuarterOfYear>
 
 =head1 AUTHOR
 
