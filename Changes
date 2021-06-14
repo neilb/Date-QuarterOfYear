@@ -2,6 +2,7 @@ Revision history for Perl module Date::QuarterOfYear
 
 0.04 2021-06-14 NEILB
     - Added tests for all the error checking on params
+    - Switched to github issues for bug tracker
 
 0.03 2015-10-27 NEILB
     - Updated github repo URL after changing my github username
