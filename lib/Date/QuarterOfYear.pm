@@ -77,8 +77,13 @@ Date::QuarterOfYear - calculate what quarter a given date is in
 
 =head1 DESCRIPTION
 
-Date::QuarterOfYear provides a single function, C<quarter_of_year>,
-which takes a date and returns what quarter that date is in.
+Date::QuarterOfYear provides a single function,
+but even so you must explicitly ask for it,
+as per the SYNOPSIS.
+
+=head2 quarter_of_year()
+
+C<quarter_of_year> takes a date and returns what quarter that date is in.
 The input date can be specified in various ways, and the result
 will either be returned as a string of the form 'YYYY-QN' (eg '2014-Q2'),
 or as a list C<($year, $quarter)>.
