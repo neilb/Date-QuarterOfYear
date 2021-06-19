@@ -56,5 +56,11 @@ like(
     "wrong number of arguments",
 );
 
+like(
+    exception { quarter_of_year( "2019-05" ) },
+    qr/unexpected date format/,
+    "ISO format but without the days",
+);
+
 done_testing();
 
