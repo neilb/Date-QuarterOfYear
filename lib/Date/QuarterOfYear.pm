@@ -34,8 +34,11 @@ sub _dwim_date
         elsif (reftype($param)) {
             croak "you can't pass a reference of type ".reftype($param);
         }
-        elsif ($param =~ /^([0-9][0-9][0-9][0-9])-([0-9][0-9])-([0-9][0-9])$/) {
+        elsif ($param =~ /^([0-9][0-9][0-9][0-9])-([0-9]{1,2})-([0-9]{1,2})$/) {
             return { year => $1, month => $2, day => $3 };
+        }
+        elsif ($param !~ /^[0-9]+$/) {
+            croak "unexpected date format in '$param'\n";
         }
 
         my @tm = gmtime($param);
